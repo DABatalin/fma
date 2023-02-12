@@ -10,7 +10,7 @@ public class VelocityChecker : MonoBehaviour
     }
 
     IEnumerator CalculateSpeed() {
-        if (Time.time > 0.1) { 
+        if (Time.time > 0.2) { 
             Vector3 lastPosition = transform.position;
             yield return new WaitForFixedUpdate();
             speed = (lastPosition - transform.position).magnitude / Time.deltaTime; 
